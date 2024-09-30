@@ -1,0 +1,6 @@
+POST http://localhost:3000/api/summaries
+Content-Type: application/json
+
+{
+    "content": "During today's interaction with the patient in the PAC, they reported feeling a bit dizzy post-procedure, which is a normal reaction to anesthesia. I reassured them about the recovery process and monitored their vital signs, which were stable. The patient expressed gratitude for the care received and requested water, which I provided promptly. Overall, the patient appears to be recovering well and is receptive to ongoing support. No additional concerns were raised during this session. Will continue to monitor and provide assistance as needed."
+}
