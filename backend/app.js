@@ -5,6 +5,7 @@ const config = require('./utils/config')
 const logger = require('./utils/logger')
 const mongoose = require('mongoose')
 
+const transcriptionRouter = require('./controllers/transcriptions')
 const summaryRouter = require('./controllers/summaries')
 const uploadRouter = require('./controllers/upload')
 
@@ -24,6 +25,7 @@ app.use(cors())
 app.use(express.static('dist'))
 app.use(express.json())
 
+app.use('/api/transcriptions', transcriptionRouter)
 app.use('/api/summaries', summaryRouter)
 app.use('/api/upload', uploadRouter)
 
